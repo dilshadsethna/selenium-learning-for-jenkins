@@ -31,6 +31,7 @@ public class LoginTest extends BaseTest {
                   
             // Replace 'System.out.println' with reporter.log ; the 2nd parameter "true" , will print the message in the console As well as TestNG Report
             Reporter.log("Page Title : " + actualTitle, true);
+            System.out.println("Git Changes - See in Console");
             
             // Assertion - if equal , test passes
             // so if actual title is "OrangeHRM" , test passes 
