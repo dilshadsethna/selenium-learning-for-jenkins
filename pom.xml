@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<!-- Root project definition -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Maven model version -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Project identity -->
+    <groupId>com.automation</groupId>
+    <artifactId>selenium-learning</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <name>selenium-learning</name>
+
+
+    <!-- JAVA CONFIGURATION -->
+
+    <properties>
+        <!-- Encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <!-- Java version (IMPORTANT: must match your system JDK) -->
+        <maven.compiler.release>11</maven.compiler.release>
+    </properties>
+
+
+	    <!-- DEPENDENCIES -->
+	    
+<dependencies>
+
+    <!-- Selenium -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.33.0</version>
+    </dependency>
+
+    
+    <!-- TestNG -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.10.2</version>
+        <scope>test</scope>
+    </dependency>
+
+    
+      
+
+</dependencies>
+
+    <!-- ========================= -->
+    <!-- BUILD PLUGINS -->
+    <!-- ========================= -->
+    <build>
+        <plugins>
+
+            <!-- Compiler Plugin -->
+            <!-- Compiles Java code using defined Java version -->
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+            </plugin>
+
+            <!-- Surefire Plugin -->
+            <!-- THIS IS WHAT RUNS TESTS IN MAVEN -->
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.3.0</version>
+
+                <!-- Tell Maven to use TestNG (NOT JUnit) -->
+                <configuration>
+                    <suiteXmlFiles>
+                        <!-- This file controls which tests to run -->
+                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

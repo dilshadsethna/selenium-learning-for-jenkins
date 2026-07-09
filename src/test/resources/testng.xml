@@ -1,0 +1,12 @@
+<suite name="Suite" >
+
+    <test name="OrangeHRM" >
+
+        <classes>
+            <class name="tests.LoginTest"/>
+            
+        </classes>
+
+    </test>
+
+</suite>

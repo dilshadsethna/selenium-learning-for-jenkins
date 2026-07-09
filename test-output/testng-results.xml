@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Page Title : OrangeHRM]]>
+    </line>
+    <line>
+      <![CDATA[Page Title : OrangeHRM]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-07-04T19:22:41 IST" name="Grid Suite" finished-at="2026-07-04T19:22:56 IST" duration-ms="14891">
+    <groups>
+    </groups>
+    <test started-at="2026-07-04T19:22:41 IST" name="Chrome Test" finished-at="2026-07-04T19:22:56 IST" duration-ms="14683">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@4e096385]" started-at="2026-07-04T19:22:41 IST" name="setup" finished-at="2026-07-04T19:22:48 IST" duration-ms="7548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkLoginPageTitle()[pri:1, instance:tests.LoginTest@4e096385]" started-at="2026-07-04T19:22:48 IST" name="checkLoginPageTitle" finished-at="2026-07-04T19:22:49 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Page Title : OrangeHRM]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkLoginPageTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginTest@4e096385]" started-at="2026-07-04T19:22:49 IST" name="closeBrowser" finished-at="2026-07-04T19:22:56 IST" duration-ms="6940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2026-07-04T19:22:41 IST" name="Firefox Test" finished-at="2026-07-04T19:22:56 IST" duration-ms="14891">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.LoginTest@1e04fa0a]" started-at="2026-07-04T19:22:41 IST" name="setup" finished-at="2026-07-04T19:22:54 IST" duration-ms="12682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkLoginPageTitle()[pri:1, instance:tests.LoginTest@1e04fa0a]" started-at="2026-07-04T19:22:54 IST" name="checkLoginPageTitle" finished-at="2026-07-04T19:22:54 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Page Title : OrangeHRM]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- checkLoginPageTitle -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.LoginTest@1e04fa0a]" started-at="2026-07-04T19:22:54 IST" name="closeBrowser" finished-at="2026-07-04T19:22:56 IST" duration-ms="2136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.LoginTest -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Grid Suite -->
+</testng-results>
